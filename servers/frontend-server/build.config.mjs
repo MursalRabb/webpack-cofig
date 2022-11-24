@@ -1,5 +1,7 @@
+import buildConfig from "../../build.config.mjs"
+
 const config = {
-    ...require('../../build.config'),
+    ...buildConfig,
     __CLIENT__: true,
     __SERVER__: false,
     __DEV__: process.env.NODE_ENV !== 'production',
@@ -10,4 +12,5 @@ const config = {
     __FRONTEND_BUILD_DIR__: process.env.FRONTEND_BUILD_DIR || './dist/web',
 };
 
-module.exports = config;
+// module.exports = config;
+export default config

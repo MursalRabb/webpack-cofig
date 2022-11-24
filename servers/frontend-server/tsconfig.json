@@ -11,5 +11,5 @@
     "skipLibCheck": true
   },
   "include": ["../../typings/*.d.ts"],
-  "exclude": ["node_modules", "lib", "dist", "webpack.config.js"]
+  "exclude": ["node_modules", "lib", "dist", "webpack.config.mjs"]
 }
